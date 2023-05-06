@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container-a">
+    <div class="background">
+      <div class="form-container">
+        <form>
+          <div class="date-flex">
+            <div class="day-1">
+            <label class="day-text" for="day">Day</label>
+            <input class="day" id="day" type="number" placeholder="DD" maxlength="2">
+            <p class="valid-x">Please enter a valid day</p>
+            </div>
+            <div class="month-1">
+            <label class="month-text" for="month">Month</label>
+            <input class="month" id="month" type="number" placeholder="MM" maxlength="2">
+            <p class="valid-x">Please enter a valid month</p>
+            </div>
+            <div class="year-1">
+            <label class="year-text" for="id">Year</label>
+            <input class="year" id="year" type="number" placeholder="YYYY" maxlength="4">
+            <p class="valid-x">Please enter a valid year</p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="decoration">
+      </div>
+      <div class="button-main" style="background-color:white;">
+        <div class="button-container">
+          <div class="img-container">
+            <button class="button-down" id="button-down" ><img src="assets/images/icon-arrow.svg"></button>
+          </div>
+        </div>
+      </div>
+      <div class="result-container">
+        <div class="year-calc"> <p class="result">--</p> <p class="text-static">years</p></div>
+        <div class="months-calc"> <p class="result">--</p> <p class="text-static">months</p></div>
+        <div class="days-calc"> <p class="result">--</p> <p class="text-static">days</p></div>
+        <div class="filler"></div> 
+      </div>
+  </div>
+  <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>
